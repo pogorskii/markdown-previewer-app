@@ -3,6 +3,6 @@ import previewerReducer from "../features/previewer/previewerSlice";
 
 export const store = configureStore({
   reducer: {
-    counter: previewerReducer,
+    previewer: previewerReducer,
   },
 });

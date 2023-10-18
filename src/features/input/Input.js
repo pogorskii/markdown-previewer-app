@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { inputText } from "../previewer/previewerSlice";
+import { initialState } from "../previewer/previewerSlice";
 
 export function Input() {
   const dispatch = useDispatch();
@@ -12,7 +13,11 @@ export function Input() {
   return (
     <div>
       <div>
-        <textarea onChange={handleChange}></textarea>
+        <textarea
+          defaultValue={initialState.input}
+          onChange={handleChange}
+          id="editor"
+        ></textarea>
       </div>
     </div>
   );

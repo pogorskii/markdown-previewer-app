@@ -11,8 +11,8 @@ function App() {
         <Container id="text-editor-container">
           <Input />
         </Container>
-        <Container id="preview">
-          <Previewer />
+        <Container>
+          <Previewer className="text-start" />
         </Container>
       </Container>
     </div>

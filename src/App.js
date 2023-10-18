@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { Container } from "semantic-ui-react";
+import "./App.css";
+
+import { Previewer } from "./features/previewer/Previewer";
+import { Input } from "./features/input/Input";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container className="d-flex w-100">
+        <Container id="text-editor-container">
+          <Input />
+        </Container>
+        <Container id="preview">
+          <Previewer />
+        </Container>
+      </Container>
     </div>
   );
 }

@@ -1,8 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 export const initialState = {
-  input: `
-  # Welcome to my React Markdown Previewer!
+  input: `# Welcome to my React Markdown Previewer!
 
 ## This is a sub-heading...
 
@@ -36,9 +35,7 @@ And feel free to go crazy ~~crossing stuff out~~.
 1. Use just 1s if you want!
 1. And last but not least, let's not forget embedded images:
 
-![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)
-
-  `,
+![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)`,
 };
 
 export const previewerSlice = createSlice({

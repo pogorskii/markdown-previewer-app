@@ -16,7 +16,8 @@ export function Previewer() {
   return (
     <div
       id="preview"
-      className="text-start"
+      style={{ height: visualViewport.height - 50 }}
+      className="text-start overflow-y-scroll"
       dangerouslySetInnerHTML={{ __html: parsedInput }}
     />
   );

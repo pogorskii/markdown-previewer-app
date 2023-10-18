@@ -11,14 +11,12 @@ export function Input() {
   };
 
   return (
-    <div>
-      <div>
-        <textarea
-          defaultValue={initialState.input}
-          onChange={handleChange}
-          id="editor"
-        ></textarea>
-      </div>
-    </div>
+    <textarea
+      className="form-control"
+      rows={Math.floor(visualViewport.height / 23)}
+      defaultValue={initialState.input}
+      onChange={handleChange}
+      id="editor"
+    />
   );
 }

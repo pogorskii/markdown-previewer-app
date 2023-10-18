@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+img {
+  max-width: 100%;
+}
+
+pre,
+code {
+  background-color: cornsilk;
+}
+
+code {
+  max-width: 100%;
+  overflow-x: scroll;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
